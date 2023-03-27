@@ -1,11 +1,11 @@
-import {defineConfig} from 'sanity'
-import {deskTool} from 'sanity/desk'
-import {visionTool} from '@sanity/vision'
-import {schemaTypes} from './schemas'
+import { defineConfig } from 'sanity';
+import { deskTool } from 'sanity/desk';
+import { visionTool } from '@sanity/vision';
+import { schemaTypes } from './schemas';
 
 export default defineConfig({
   name: 'default',
-  title: 'procore-abax',
+  title: 'Branches – Procore / ABAX Backoffice',
 
   projectId: 'j1f6z3dh',
   dataset: 'production',
@@ -15,4 +15,4 @@ export default defineConfig({
   schema: {
     types: schemaTypes,
   },
-})
+});
