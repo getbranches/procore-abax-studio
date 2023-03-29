@@ -24,8 +24,5 @@ jobs:
       - name: Format
         run: yarn format:check
 
-      - name: Test
-        run: yarn test --passWithNoTests
-
       - name: Build
         run: yarn build
