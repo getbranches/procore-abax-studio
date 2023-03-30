@@ -10,16 +10,16 @@ export default {
     },
     { name: 'id', type: 'string', title: 'ID' },
     { name: 'email', type: 'string', title: 'Email' },
-    { type: 'string', name: 'type', title: 'Type' },
-    { type: 'string', name: 'environment', title: 'Environment' },
+    { name: 'type', type: 'string', title: 'Type' },
+    { name: 'environment', type: 'string', title: 'Environment' },
     {
       name: 'abaxData',
       type: 'object',
       title: 'Abax Data',
       fields: [
-        { type: 'string', name: 'authMethod', title: 'Auth Method' },
-        { type: 'string', name: 'clientId', title: 'Client ID' },
-        { type: 'string', name: 'clientSecret', title: 'Client Secret' },
+        { name: 'authMethod', type: 'string', title: 'Auth Method' },
+        { name: 'clientId', type: 'string', title: 'Client ID' },
+        { name: 'clientSecret', type: 'string', title: 'Client Secret' },
       ],
     },
     {
@@ -27,8 +27,8 @@ export default {
       type: 'object',
       title: 'Procore Data',
       fields: [
-        { type: 'number', name: 'companyId', title: 'Company ID' },
-        { type: 'number', name: 'projectId', title: 'Project ID' },
+        { name: 'companyId', type: 'number', title: 'Company ID' },
+        { name: 'projectId', type: 'number', title: 'Project ID' },
       ],
     },
   ],
