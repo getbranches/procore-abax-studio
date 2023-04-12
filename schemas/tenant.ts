@@ -33,6 +33,7 @@ export const tenant = defineType({
       name: 'type',
       type: 'string',
       title: 'Type',
+      options: { list: ['internal', 'affiliate', 'external'] },
     },
     {
       name: 'procoreData',
