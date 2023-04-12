@@ -10,24 +10,28 @@ export const tenant = defineType({
       title: 'Procore Data',
     },
     { name: 'abaxData', title: 'Abax Data' },
+    { name: 'company', title: 'Company details' },
   ],
   fields: [
     {
       name: 'name',
       type: 'string',
       title: 'Name',
+      group: 'company',
     },
     {
       name: 'id',
       type: 'string',
       title: 'ID',
       description: 'companyId-projectId',
+      group: 'company',
     },
     {
       name: 'email',
       type: 'string',
       title: 'Email',
       description: 'Contact email',
+      group: 'company',
     },
     {
       name: 'type',
@@ -35,6 +39,7 @@ export const tenant = defineType({
       title: 'Type',
       initialValue: 'external',
       options: { list: ['internal', 'affiliate', 'external'] },
+      group: 'company',
     },
     {
       name: 'procoreData',
