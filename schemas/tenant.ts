@@ -17,9 +17,23 @@ export const tenant = defineType({
       type: 'string',
       title: 'Name',
     },
-    { name: 'id', type: 'string', title: 'ID' },
-    { name: 'email', type: 'string', title: 'Email' },
-    { name: 'type', type: 'string', title: 'Type' },
+    {
+      name: 'id',
+      type: 'string',
+      title: 'ID',
+      description: 'companyId-projectId',
+    },
+    {
+      name: 'email',
+      type: 'string',
+      title: 'Email',
+      description: 'Contact email',
+    },
+    {
+      name: 'type',
+      type: 'string',
+      title: 'Type',
+    },
     {
       name: 'procoreData',
       type: 'procoreData',
