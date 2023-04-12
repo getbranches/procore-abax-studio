@@ -20,13 +20,6 @@ export const tenant = defineType({
       group: 'company',
     },
     {
-      name: 'id',
-      type: 'string',
-      title: 'ID',
-      description: 'companyId-projectId',
-      group: 'company',
-    },
-    {
       name: 'email',
       type: 'string',
       title: 'Email',
