@@ -1,7 +1,16 @@
-export default {
+import { defineType } from 'sanity';
+
+export const tenant = defineType({
   name: 'tenant',
   type: 'document',
   title: 'Tenant',
+  groups: [
+    {
+      name: 'procoreData',
+      title: 'Procore Data',
+    },
+    { name: 'abaxData', title: 'Abax Data' },
+  ],
   fields: [
     {
       name: 'name',
@@ -11,25 +20,17 @@ export default {
     { name: 'id', type: 'string', title: 'ID' },
     { name: 'email', type: 'string', title: 'Email' },
     { name: 'type', type: 'string', title: 'Type' },
-    { name: 'environment', type: 'string', title: 'Environment' },
-    {
-      name: 'abaxData',
-      type: 'object',
-      title: 'Abax Data',
-      fields: [
-        { name: 'authMethod', type: 'string', title: 'Auth Method' },
-        { name: 'clientId', type: 'string', title: 'Client ID' },
-        { name: 'clientSecret', type: 'string', title: 'Client Secret' },
-      ],
-    },
     {
       name: 'procoreData',
-      type: 'object',
+      type: 'procoreData',
       title: 'Procore Data',
-      fields: [
-        { name: 'companyId', type: 'number', title: 'Company ID' },
-        { name: 'projectId', type: 'number', title: 'Project ID' },
-      ],
+      group: 'procoreData',
+    },
+    {
+      name: 'abaxData',
+      type: 'abaxData',
+      title: 'Abax Data',
+      group: 'abaxData',
     },
   ],
-};
+});
