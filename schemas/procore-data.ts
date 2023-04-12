@@ -11,6 +11,7 @@ export const procoreData = defineType({
       name: 'environment',
       type: 'string',
       title: 'Environment',
+      initialValue: 'production',
       options: { list: ['sandbox', 'production'] },
     },
   ],
