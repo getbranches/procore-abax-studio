@@ -15,5 +15,11 @@ export const abaxData = defineType({
       initialValue: 'production',
       options: { list: ['sandbox', 'production'] },
     },
+    {
+      name: 'email',
+      type: 'string',
+      title: 'Email',
+      description: 'Email associated with abax account',
+    },
   ],
 });
